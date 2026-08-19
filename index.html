@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Patwadi — Backend / GenAI Engineer</title>
+  <meta name="description" content="Rahul Patwadi — Backend / GenAI Engineer. Production backend systems, agentic LLM pipelines, and retrieval-augmented systems." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" id="nav-brand">RP</a>
+      <nav class="nav__links" id="nav-links"></nav>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__links nav__links--mobile" id="nav-links-mobile"></nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 class="hero__name" id="hero-name"></h1>
+        <p class="hero__role" id="hero-role"></p>
+        <p class="hero__description" id="hero-description"></p>
+        <div class="hero__links" id="hero-links"></div>
+      </div>
+      <div class="hero__visual" id="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <p class="eyebrow" id="about-eyebrow"></p>
+        <h2 class="section__title" id="about-heading"></h2>
+      </div>
+      <div class="about__body" id="about-body"></div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <p class="eyebrow" id="experience-eyebrow"></p>
+        <h2 class="section__title" id="experience-heading"></h2>
+        <p class="section__company" id="experience-company"></p>
+      </div>
+      <div class="experience__roles" id="experience-roles"></div>
+    </section>
+
+    <!-- ============ PROJECT ============ -->
+    <section class="section section--project" id="project">
+      <div class="section__head">
+        <p class="eyebrow" id="project-eyebrow"></p>
+        <h2 class="section__title" id="project-heading"></h2>
+        <p class="project__tagline" id="project-tagline"></p>
+        <div class="project__missions" id="project-missions"></div>
+      </div>
+
+      <div class="project__pipeline" id="project-pipeline"></div>
+
+      <div class="project__body">
+        <div class="project__description" id="project-description"></div>
+        <div class="project__stats" id="project-stats"></div>
+      </div>
+
+      <div class="project__tech" id="project-tech"></div>
+
+      <a class="project__link" id="project-github" target="_blank" rel="noopener noreferrer"></a>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <p class="eyebrow" id="skills-eyebrow"></p>
+        <h2 class="section__title" id="skills-heading"></h2>
+      </div>
+      <div class="skills__grid" id="skills-grid"></div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <p class="eyebrow" id="education-eyebrow"></p>
+        <h2 class="section__title" id="education-heading"></h2>
+      </div>
+      <div class="education__list" id="education-list"></div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <p class="eyebrow" id="contact-eyebrow"></p>
+        <h2 class="section__title" id="contact-heading"></h2>
+        <p class="contact__description" id="contact-description"></p>
+      </div>
+      <div class="contact__links" id="contact-links"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <p id="footer-text"></p>
+    <a href="#top" class="footer__top">Back to top ↑</a>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
