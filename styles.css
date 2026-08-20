@@ -94,7 +94,12 @@ body::before {
   mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 0%, transparent 70%);
   opacity: 0.35;
 }
-
+.nav__links--mobile.is-open {
+  display: flex;
+  background: rgba(10, 12, 15, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 /* ==========================================================
    TYPE UTILITIES
    ========================================================== */
