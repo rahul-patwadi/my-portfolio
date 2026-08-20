@@ -53,7 +53,6 @@ function renderNav() {
 function renderHero() {
   const { hero, meta } = CONTENT;
 
-  document.getElementById("hero-eyebrow").textContent = hero.eyebrow;
   document.getElementById("hero-name").textContent = hero.heading;
   document.getElementById("hero-role").textContent = hero.subheading;
   document.getElementById("hero-description").textContent = hero.description;
@@ -72,11 +71,16 @@ function renderHero() {
 
 function renderAbout() {
   const { about } = CONTENT;
-  document.getElementById("about-eyebrow").textContent = about.eyebrow;
   document.getElementById("about-heading").textContent = about.heading;
 
   const body = document.getElementById("about-body");
-  about.paragraphs.forEach((p) => body.appendChild(el("p", { text: p })));
+  const list = el("ul", { class: "about-list" });
+
+  about.points.forEach((point) => {
+    list.appendChild(el("li", { text: point }));
+  });
+
+  body.appendChild(list);
 }
 
 function renderPipeline(steps, container) {
@@ -93,7 +97,6 @@ function renderPipeline(steps, container) {
 
 function renderExperience() {
   const { experience } = CONTENT;
-  document.getElementById("experience-eyebrow").textContent = experience.eyebrow;
   document.getElementById("experience-heading").textContent = experience.heading;
   document.getElementById("experience-company").textContent =
     `${experience.company} — ${experience.companyLocation}`;
@@ -139,7 +142,6 @@ function renderExperience() {
 function renderProject() {
   const { project } = CONTENT;
 
-  document.getElementById("project-eyebrow").textContent = project.eyebrow;
   document.getElementById("project-heading").textContent = project.heading;
   document.getElementById("project-tagline").textContent = project.tagline;
 
@@ -174,7 +176,6 @@ function renderProject() {
 
 function renderSkills() {
   const { skills } = CONTENT;
-  document.getElementById("skills-eyebrow").textContent = skills.eyebrow;
   document.getElementById("skills-heading").textContent = skills.heading;
 
   const grid = document.getElementById("skills-grid");
@@ -190,7 +191,6 @@ function renderSkills() {
 
 function renderEducation() {
   const { education } = CONTENT;
-  document.getElementById("education-eyebrow").textContent = education.eyebrow;
   document.getElementById("education-heading").textContent = education.heading;
 
   const list = document.getElementById("education-list");
@@ -214,7 +214,6 @@ function renderEducation() {
 
 function renderContact() {
   const { contact, meta } = CONTENT;
-  document.getElementById("contact-eyebrow").textContent = contact.eyebrow;
   document.getElementById("contact-heading").textContent = contact.heading;
   document.getElementById("contact-description").textContent = contact.description;
 
