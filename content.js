@@ -216,7 +216,7 @@ const CONTENT = {
         location: "San Jose, CA",
         degree: "M.S. in Engineering — Specialization: AI Systems Engineering",
         dates: "Aug 2026 – May 2028",
-        status: "Expected",
+        status: null,
       },
       {
         school: "JSS Academy of Technical Education (VTU)",
