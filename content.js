@@ -213,7 +213,7 @@ const CONTENT = {
     entries: [
       {
         school: "San José State University",
-        location: "San Jose, CA",
+        location: "San Jose, California",
         degree: "M.S. in Engineering — Specialization: AI Systems Engineering",
         dates: "Aug 2026 – May 2028",
         status: null,
