@@ -57,7 +57,7 @@ const CONTENT = {
   about: {
     eyebrow: "// about",
     heading: "About",
-    paragraphs: [
+    points: [
       "I work at the intersection of backend engineering and applied GenAI. Building services and pipelines that run in real production infrastructure, not notebooks.",
       "Most of my work involves Python and FastAPI on the backend, LangGraph for multi-agent orchestration with large language models, and Docker, Kubernetes, and GitLab CI/CD for getting that work deployed and keeping it running across dev, UAT, and production.",
     ],
