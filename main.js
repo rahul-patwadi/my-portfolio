@@ -68,28 +68,6 @@ function renderHero() {
   links.appendChild(
     el("a", { href: meta.linkedin, target: "_blank", rel: "noopener noreferrer", text: "LinkedIn" })
   );
-
-  const visual = document.getElementById("hero-visual");
-  const bar = el("div", { class: "status-bar" });
-  bar.appendChild(
-    el("div", { class: "status-bar__head" }, [
-      el("span", { class: "status-bar__dot" }),
-      el("span", { text: "system status" }),
-    ])
-  );
-  hero.statusFeed.forEach((row, i) => {
-    const line = el("div", { class: "status-row" });
-    line.style.animationDelay = `${0.15 + i * 0.12}s`;
-    line.appendChild(
-      el("div", { class: "status-row__left" }, [
-        el("span", { class: `status-pill is-${row.state}` }),
-        el("span", { class: "status-row__label", text: row.label }),
-      ])
-    );
-    line.appendChild(el("span", { class: "status-row__detail", text: row.detail }));
-    bar.appendChild(line);
-  });
-  visual.appendChild(bar);
 }
 
 function renderAbout() {
