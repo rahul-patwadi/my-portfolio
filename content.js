@@ -1,21 +1,3 @@
-/**
- * ============================================================
- *  PORTFOLIO CONTENT
- * ============================================================
- *  This is the ONLY file you should need to edit to update
- *  your portfolio's text, links, dates, or numbers.
- *
- *  - Everything visible on the site is defined below as plain
- *    data (strings, arrays, objects).
- *  - The layout/design code in js/main.js reads this file and
- *    renders the page automatically.
- *  - You do not need to touch index.html, styles.css, or
- *    main.js to make normal content updates.
- *
- *  Just edit the values inside the quotes below and save.
- * ============================================================
- */
-
 const CONTENT = {
 
   // ---------------------------------------------------------
@@ -30,6 +12,7 @@ const CONTENT = {
     githubLabel: "github.com/rahul-patwadi",
     linkedin: "https://linkedin.com/in/rahul-patwadi-b080701ba",
     linkedinLabel: "linkedin.com/in/rahul-patwadi-b080701ba",
+    resumeUrl: "assets/Rahul Patwadi_Intern.pdf",
   },
 
   // ---------------------------------------------------------
@@ -40,7 +23,7 @@ const CONTENT = {
     heading: "Rahul Patwadi",
     subheading: "Backend / GenAI Engineer",
     description:
-      "I build production backend services, agentic LLM pipelines, and retrieval-augmented systems — from PostgreSQL-backed monitoring to Kubernetes-deployed multi-agent SRE tooling.",
+      "I build production backend services, agentic LLM pipelines, and retrieval-augmented systems, from PostgreSQL-backed monitoring to Kubernetes-deployed multi-agent SRE tooling.",
     // Small status readout shown in the hero visual. Grounded in
     // real systems described in the Experience section.
     statusFeed: [
@@ -87,7 +70,7 @@ const CONTENT = {
         title: "Analyst (Backend / GenAI Engineer)",
         dates: "Jun 2025 – Jan 2026",
         bullets: [
-          "Contributed to building and prompting a 5-agent LLM pipeline (observability, analysis, root cause, solution recommendation, auto-fix) using LangGraph and Llama 3.3, alongside a small engineering team — powering automated root-cause analysis for a 37-job production Control-M pipeline polled every 5 minutes.",
+          "Contributed to building and prompting a 5-agent LLM pipeline (observability, analysis, root cause, solution recommendation, auto-fix) using LangGraph and Llama 3.3, alongside a small engineering team, powering automated root-cause analysis for a 37-job production Control-M pipeline polled every 5 minutes.",
           "Designed a human-in-the-loop approval gate ahead of the auto-fix agent, and rebuilt incident-state tracking from a 2-state model to a 3-state model (in progress → pending approval → complete) for accurate SRE reporting.",
         ],
         metrics: [
@@ -109,9 +92,9 @@ const CONTENT = {
         title: "Analyst (.NET / Backend Engineer)",
         dates: "Jun 2023 – May 2025",
         bullets: [
-          "Contributed to AV Scanner, an existing .NET Web API integrating McAfee antivirus scanning for incoming purchase-order documents — collaborated with teammates to implement synchronous (S3) and asynchronous (NAS) processing flows, migrate the service from a Windows VM to containerized Kubernetes, and raise code quality from 58% to 90%.",
+          "Contributed to AV Scanner, an existing .NET Web API integrating McAfee antivirus scanning for incoming purchase-order documents , collaborated with teammates to implement synchronous (S3) and asynchronous (NAS) processing flows, migrate the service from a Windows VM to containerized Kubernetes, and raise code quality from 58% to 90%.",
           "Contributed backend/API work to the Purchase Order Assistant, a FastAPI service extracting structured data from PDF purchase orders via an ML model, and its Angular frontend.",
-          "Maintained production microservices — resolved CI/CD, Docker, SonarQube, and Tenable findings; monitored Kubernetes workloads.",
+          "Maintained production microservices , resolved CI/CD, Docker, SonarQube, and Tenable findings; monitored Kubernetes workloads.",
         ],
         metrics: [
           { value: "58% → 90%", label: "code quality" },
@@ -131,7 +114,7 @@ const CONTENT = {
     missions: ["Apollo", "Artemis", "ISS", "Mars", "Hubble", "Voyager"],
     description: [
       "An async NTRS document harvester (httpx, pagination, 429 backoff, ITAR/EAR filtering, dedup) ingested 539 of 545 records into 86,003 chunks stored in ChromaDB.",
-      "Evaluated retrieval quality with a hand-labeled harness, then truncated embeddings to 768 dimensions — raising mean precision@5 from 0.67 to 0.70 while shrinking the vector store from 1.5GB to 742MB.",
+      "Evaluated retrieval quality with a hand-labeled harness, then truncated embeddings to 768 dimensions , raising mean precision@5 from 0.67 to 0.70 while shrinking the vector store from 1.5GB to 742MB.",
       "Containerized the full stack with Docker (Python backend, Angular frontend served via an Nginx reverse proxy) and enforced strict engineering discipline with uv, ruff, mypy --strict, and a pytest suite.",
     ],
     pipeline: [
@@ -158,10 +141,12 @@ const CONTENT = {
     ],
     github: "https://github.com/rahul-patwadi/nasa-mission-intelligence",
     githubLabel: "github.com/rahul-patwadi/nasa-mission-intelligence",
+    site: "https://nasa-mission-frontend-76299851234.us-central1.run.app",
+    siteLabel: "nasa-mission-frontend-76299851234.us-central1.run.app",
   },
 
   // ---------------------------------------------------------
-  // Skills — categories and technologies exactly as on resume
+  // Skills , categories and technologies exactly as on resume
   // ---------------------------------------------------------
   skills: {
     eyebrow: "// skills",
@@ -214,7 +199,7 @@ const CONTENT = {
       {
         school: "San José State University",
         location: "San Jose, California",
-        degree: "M.S. in Engineering — Specialization: AI Systems Engineering",
+        degree: "M.S. in Engineering , Specialization: AI Systems Engineering",
         dates: "Aug 2026 – May 2028",
         status: "Expected",
       },
