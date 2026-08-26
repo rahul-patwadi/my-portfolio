@@ -1022,6 +1022,8 @@ body::before {
 
   padding: 12px 20px;
 
+  margin-bottom: 25px;
+
   color: var(--bg);
 
   background: var(--accent);
@@ -1114,7 +1116,72 @@ body::before {
   white-space: nowrap;
 }
 
+/* ==========================================================
+   SOCIAL SIDEBAR
+   ========================================================== */
 
+.sidebar {
+  position: fixed;
+  left: 32px;
+  bottom: 0;
+  z-index: 90;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+
+  padding-bottom: 24px;
+}
+
+.sidebar__links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  color: var(--text-muted);
+
+  transition:
+    color 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+
+.sidebar__link:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.sidebar__line {
+  width: 1px;
+  height: 90px;
+
+  background: var(--text-faint);
+
+  opacity: 0.4;
+}
+
+/* Right-side variant, if you'd rather it sit on the right */
+.sidebar--right {
+  left: auto;
+  right: 32px;
+}
+
+/* Hide on tablets/mobile — fall back to hero buttons */
+@media (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+}
 /* ==========================================================
    EDUCATION
    ========================================================== */
