@@ -3,28 +3,30 @@
    ========================================================== */
 
 :root {
-  /* Greyscale */
-  --bg: #0d0d0d;
-  --surface: #141414;
-  --surface-alt: #1b1b1b;
-  --border: #2b2b2b;
-  --border-soft: #202020;
+  /* Greyscale — more separation between layers */
+  --bg: #0a0a0a;
+  --surface: #151515;
+  --surface-alt: #1e1e1e;
+  --border: #333333;
+  --border-soft: #232323;
   --text: #f2f2f2;
-  --text-muted: #a0a0a0;
-  --text-faint: #666666;
+  --text-muted: #a8a8a8;
+  --text-faint: #6e6e6e;
 
-  /* Fire accent */
+  /* Fire accent — reserved for links, buttons, interactive elements ONLY */
   --accent: #ff5a1f;
   --accent-dim: #cc3f0d;
   --accent-soft: rgba(255, 90, 31, 0.12);
 
-  /* Fire secondary */
-  --accent-amber: #ff9d2e;
-  --accent-amber-soft: rgba(255, 157, 46, 0.14);
+  /* Metrics / emphasis — cooler gold, distinct from accent */
+  --metric: #ffb84d;
+  --metric-soft: rgba(255, 184, 77, 0.12);
 
-  /* Status */
-  --accent-green: #ff6a2a;
-  --accent-green-soft: rgba(255, 106, 42, 0.14);
+  /* Status — ok vs pending are now genuinely different colors */
+  --status-ok: #4ade80;
+  --status-ok-soft: rgba(74, 222, 128, 0.14);
+  --status-pending: #ffb84d;
+  --status-pending-soft: rgba(255, 184, 77, 0.14);
 
   /* Typography */
   --font-display: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -514,8 +516,8 @@ body::before {
 
   flex-shrink: 0;
 
-  background: var(--accent-green);
-  box-shadow: 0 0 0 3px var(--accent-green-soft);
+  background: var(--status-ok);
+  box-shadow: 0 0 0 3px var(--status-ok-soft);
 }
 
 .status-row {
@@ -575,19 +577,19 @@ body::before {
 }
 
 .status-pill.is-ok {
-  background: var(--accent-green);
+  background: var(--status-ok);
 }
 
 .status-pill.is-ok::after {
-  background: var(--accent-green);
+  background: var(--status-ok);
 }
 
 .status-pill.is-pending {
-  background: var(--accent-amber);
+  background: var(--status-pending);
 }
 
 .status-pill.is-pending::after {
-  background: var(--accent-amber);
+  background: var(--status-pending);
 }
 
 .status-pill::after {
@@ -781,7 +783,7 @@ body::before {
 }
 
 .metric-chip__value {
-  color: var(--accent);
+  color: var(--metric);
 
   font-family: var(--font-mono);
   font-size: 11px;
@@ -830,11 +832,11 @@ body::before {
 }
 
 .pipeline__step.is-approval {
-  color: var(--accent-amber);
+  color: var(--status-pending);
 
-  background: var(--accent-amber-soft);
+  background: var(--status-pending-soft);
 
-  border-color: rgba(232, 163, 61, 0.35);
+  border-color: rgba(255, 184, 77, 0.35);
 }
 
 .pipeline__arrow {
@@ -970,7 +972,7 @@ body::before {
 .stat-card__value {
   margin-bottom: 3px;
 
-  color: var(--accent);
+  color: var(--metric);
 
   font-family: var(--font-mono);
   font-size: 14px;
@@ -1024,9 +1026,10 @@ body::before {
 
   margin-bottom: 25px;
 
-  color: var(--bg);
+  color: var(--accent);
 
-  background: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
 
   font-family: var(--font-mono);
   font-size: 12.5px;
@@ -1034,11 +1037,13 @@ body::before {
 
   transition:
     background 0.2s var(--ease),
+    color 0.2s var(--ease),
     transform 0.2s var(--ease);
 }
 
 .project__link:hover {
-  background: var(--accent-dim);
+  background: var(--accent-soft);
+  color: var(--accent);
   transform: translateY(-1px);
 }
 
@@ -1259,11 +1264,11 @@ body::before {
 .edu-badge {
   padding: 4px 9px;
 
-  color: var(--accent-amber);
+  color: var(--status-pending);
 
-  background: var(--accent-amber-soft);
+  background: var(--status-pending-soft);
 
-  border: 1px solid rgba(232, 163, 61, 0.35);
+  border: 1px solid rgba(255, 184, 77, 0.35);
 
   font-family: var(--font-mono);
   font-size: 10px;
@@ -1798,4 +1803,3 @@ body::before {
     box-shadow: none !important;
   }
 }
-
